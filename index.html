@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Girish@AI - Portfolio</title>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-200">
+    <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/916304243126" target="_blank" class="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 text-white px-4 py-3 rounded-full shadow-lg animate-bounce">
+    💬 WhatsApp Me
+  </a>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-gray-950 text-white shadow-xl z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo Circle with GA -->
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold text-lg shadow-lg">
+          GA
+        </div>
+        <span class="font-semibold bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text hidden sm:inline text-sm">Girish@AI</span>
+      </div>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <!-- This button is only visible on small screens -->
+      <button id="mobile-menu-button" class="md:hidden text-gray-200 hover:text-purple-400 transition">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <!-- Nav Links -->
+      <!-- The 'hidden' class is toggled by JavaScript on mobile -->
+      <ul id="mobile-menu" class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#home" class="bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text transition hover:opacity-80">Home</a></li>
+        <li><a href="#about" class="bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text transition hover:opacity-80">About</a></li>
+        <li><a href="#skills" class="bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text transition hover:opacity-80">Skills</a></li>
+        <li><a href="#projects" class="bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text transition hover:opacity-80">Projects</a></li>
+        <li><a href="#resume" class="bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text transition hover:opacity-80">Resume</a></li>
+        <li><a href="#certification" class="bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text transition hover:opacity-80">Certifications</a></li>
+        <li><a href="#contact" class="bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text transition hover:opacity-80">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-24">
+    <div class="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center gap-10">
+      <div class="flex-1">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
+          I'm a CSE-AI Engineering Student
+        </h1>
+        <h2 class="text-xl md:text-2xl mb-4 text-gray-200">
+          I’m a <span class="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text" id="typing"></span>
+        </h2>
+        <p class="text-gray-400 mb-6">
+          I build practical web and Java projects while exploring AI tools to solve real-world problems.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-80 text-white px-5 py-2 rounded-lg font-semibold transition">
+            📄 Download Resume
+          </a>
+          <a href="https://github.com/girish503" target="_blank"
+            class="border border-purple-500 hover:bg-purple-600 text-white px-5 py-2 rounded-lg font-semibold transition">
+            🧠 View Projects
+          </a>
+        </div>
+      </div>
+      <div class="relative w-52 h-72 rounded-3xl border-4 border-purple-500 shadow-xl animate-pulse overflow-hidden">
+        <img src="girish.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text mb-8 text-center">About Me</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">🎓 Education</h3>
+          <p class="text-gray-300">CSE - AI Engineering Student</p>
+          <p class="text-sm text-purple-300 mt-1">Prakasam Engineering Collge, Final Year</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">🧠 Interests</h3>
+          <p class="text-gray-300">Web Development, Core Java, JDBC, MySQL, AI Tools</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">🪖 Traits</h3>
+          <p class="text-gray-300">NCC Cadet, Curious Learner, Consistent, Self-Disciplined</p>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+        <p class="italic text-purple-300">"Projects over theory. Discipline over noise. I build what I believe in."</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="bg-gray-950 text-gray-200 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text mb-10 text-center">My Skills</h2>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        
+        <!-- Skill Card -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform transition hover:scale-105 hover:rotate-1">
+          <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML" class="w-16 mb-4 mx-auto">
+          <h3 class="text-xl font-semibold text-center">HTML5</h3>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform transition hover:scale-105 hover:-rotate-1">
+          <img src="https://img.icons8.com/color/96/css3.png" alt="CSS" class="w-16 mb-4 mx-auto">
+          <h3 class="text-xl font-semibold text-center">CSS3</h3>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform transition hover:scale-105 hover:rotate-1">
+          <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="JavaScript" class="w-16 mb-4 mx-auto">
+          <h3 class="text-xl font-semibold text-center">JavaScript</h3>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform transition hover:scale-105 hover:-rotate-1">
+          <img src="https://img.icons8.com/color/96/tailwindcss.png" alt="Tailwind CSS" class="w-16 mb-4 mx-auto">
+          <h3 class="text-xl font-semibold text-center">Tailwind CSS</h3>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform transition hover:scale-105 hover:rotate-1">
+          <img src="https://img.icons8.com/color/96/java-coffee-cup-logo.png" alt="Java" class="w-16 mb-4 mx-auto">
+          <h3 class="text-xl font-semibold text-center">Java</h3>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform transition hover:scale-105 hover:-rotate-1">
+          <img src="https://img.icons8.com/ios-filled/96/database.png" alt="JDBC" class="w-16 mb-4 mx-auto filter invert">
+          <h3 class="text-xl font-semibold text-center">JDBC</h3>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform transition hover:scale-105 hover:rotate-1">
+          <img src="https://img.icons8.com/fluency/96/mysql-logo.png" alt="MySQL" class="w-16 mb-4 mx-auto">
+          <h3 class="text-xl font-semibold text-center">MySQL</h3>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform transition hover:scale-105 hover:-rotate-1">
+          <img src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="AI Tools" class="w-16 mb-4 mx-auto">
+          <h3 class="text-xl font-semibold text-center">AI Tools</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-gray-950 text-gray-200 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text mb-8 text-center">Projects</h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Airline Reservation System -->
+        <div class="bg-gray-900 text-gray-200 rounded-xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:rotate-1 p-6 group relative overflow-hidden">
+          <!-- Background Animation Glow -->
+          <div class="absolute inset-0 opacity-20 bg-gradient-to-br from-purple-400 via-blue-600 to-black blur-xl z-0 group-hover:opacity-40 transition duration-500"></div>
+          
+          <!-- Image -->
+          <div class="relative z-10 mb-4">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.S7BBwXUIJvhUdbAR7W4a5gHaEM?pid=Api&P=0&h=220"
+                alt="Airline Project" 
+                class="w-full h-40 object-cover rounded-lg shadow-md border border-purple-300">
+          </div>
+
+          <!-- Project Info -->
+          <div class="relative z-10">
+            <h3 class="text-2xl font-bold bg-gradient-to-r from-purple-300 to-blue-300 text-transparent bg-clip-text mb-2">✈️ Airline Reservation System</h3>
+            <p class="text-sm text-gray-300 mb-3 leading-relaxed">
+              A Java console-based application using OOP and Collections to manage flights, reservations, seat bookings & cancellations.
+            </p>
+            <p class="text-xs text-purple-400 font-mono mb-4">Tech Stack: Java, OOP, Collections</p>
+
+            <!-- CTA -->
+            <a href="https://github.com/girish503/AirLineReservation-project.git"
+                target="_blank"
+                class="inline-block px-4 py-2 border border-purple-400 rounded hover:bg-purple-700 transition-all duration-300">
+              🔗 GitHub Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- Portfolio Website -->
+        <div class="bg-gray-900 rounded-2xl p-6 shadow-xl hover:shadow-2xl transform transition hover:-translate-y-2 hover:rotate-1 duration-500 group perspective">
+          <!-- Project Image -->
+          <img src="f.png"
+                alt="Portfolio Website Image" 
+                class="w-full h-44 object-cover rounded-lg mb-4 group-hover:scale-105 transition duration-300">
+
+          <!-- Title -->
+          <h3 class="text-2xl font-bold bg-gradient-to-r from-purple-300 to-blue-300 text-transparent bg-clip-text mb-2 group-hover:underline underline-offset-4">💼 Personal Portfolio Website</h3>
+
+          <!-- Description -->
+          <p class="text-gray-300 mb-3 leading-relaxed">
+            A responsive portfolio site built with Tailwind CSS to showcase my projects, resume, and contact details. Optimized for all devices.
+          </p>
+
+          <!-- Tech Stack -->
+          <p class="text-sm text-purple-200 mb-4">Tech Stack: HTML • Tailwind CSS • JavaScript</p>
+
+          <!-- Buttons -->
+          <div class="flex gap-4 flex-wrap">
+            <a href="https://your-portfolio-link.com"
+                class="inline-block bg-transparent border border-purple-400 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-all duration-300"
+                target="_blank">🌐 Live Demo</a>
+                
+            <a href="https://github.com/yourusername/portfolio"
+                class="inline-block bg-transparent border border-purple-400 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-all duration-300"
+                target="_blank">🔗 GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="resume" class="bg-gray-950 text-gray-200 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text mb-10 text-center">My Journey</h2>
+
+      <div class="relative border-l-4 border-purple-500 pl-6 space-y-8">
+        <div>
+          <span class="text-purple-400 font-semibold text-sm">2022 – Present</span>
+          <h3 class="text-xl font-bold">🎓 B.Tech CSE - AI</h3>
+          <p class="text-gray-400">Studying at Prakasam Engineering College with a focus on Java, Web Development, and AI Tools.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">💻 Java & Web Projects</h3>
+          <p class="text-gray-400">Built Airline Reservation System and Portfolio Website using core Java & frontend tech.</p>
+        </div>
+        <div>
+          <span class="text-purple-400 font-semibold text-sm">2023 – Present</span>
+          <h3 class="text-xl font-bold">🪖 NCC Cadet</h3>
+          <p class="text-gray-400">Learned leadership, consistency, and self-discipline through NCC training.</p>
+        </div>
+        <div>
+          <span class="text-purple-400 font-semibold text-sm">Ongoing</span>
+          <h3 class="text-xl font-bold">🤖 Exploring AI Tools</h3>
+          <p class="text-gray-400">Hands-on with Make.com, LLMs, and AI Agents for building smart automations.</p>
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
+        <a href="https://example.com/your-resume.pdf" target="_blank"
+            class="bg-gradient-to-r from-purple-600 to-blue-600 hover:opacity-80 text-white px-6 py-3 rounded-lg font-semibold transition">
+          📄 View Full Resume
+        </a>
+        <div class="w-32 h-32 bg-white rounded p-2">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://example.com/your-resume.pdf&size=150x150"
+              alt="QR Code to Resume" class="w-full h-full object-contain rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="certification" class="bg-gray-950 text-gray-200 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text mb-12 text-center">🎓 Certifications</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        
+        <!-- Java NPTEL -->
+        <div class="bg-gray-900 backdrop-blur-md border border-purple-500 rounded-2xl p-6 shadow-xl hover:-translate-y-2 hover:shadow-purple-600 transition-transform duration-500">
+          <img src="nptle.jpg" alt="Java" class="w-20 h-20 mb-4 rounded-lg border-2 border-purple-300 mx-auto">
+          <h3 class="text-xl font-bold text-purple-300 mb-1 text-center">Java Programming (NPTEL)</h3>
+          <p class="text-purple-200 text-sm text-center mb-2">🎖 Elite Certified</p>
+          <p class="text-gray-400 text-sm text-center leading-relaxed">
+            Completed core Java, OOP concepts, and logic building in the NPTEL Java course.
+          </p>
+        </div>
+
+        <!-- Cloud Internship -->
+        <div class="bg-gray-900 backdrop-blur-md border border-purple-500 rounded-2xl p-6 shadow-xl hover:-translate-y-2 hover:shadow-purple-600 transition-transform duration-500">
+          <img src="excele.jpg" alt="Cloud" class="w-20 h-20 mb-4 rounded-lg border-2 border-purple-300 mx-auto">
+          <h3 class="text-xl font-bold text-purple-300 mb-1 text-center">Cloud Internship</h3>
+          <p class="text-purple-200 text-sm text-center mb-2">☁️ Excler | Summer 2024</p>
+          <p class="text-gray-400 text-sm text-center leading-relaxed">
+            Learned Public, Private & Hybrid clouds, plus SaaS, IaaS & PaaS models.
+          </p>
+        </div>
+
+        <!-- GrowthSchool AI Tools -->
+        <div class="bg-gray-900 backdrop-blur-md border border-purple-500 rounded-2xl p-6 shadow-xl hover:-translate-y-2 hover:shadow-purple-600 transition-transform duration-500">
+          <img src="workshop.jpg" alt="AI Tools" class="w-20 h-20 mb-4 rounded-lg border-2 border-purple-300 mx-auto">
+          <h3 class="text-xl font-bold text-purple-300 mb-1 text-center">AI Tools Workshop</h3>
+          <p class="text-purple-200 text-sm text-center mb-2">🧠 GrowthSchool</p>
+          <p class="text-gray-400 text-sm text-center leading-relaxed">
+            Learned how LLMs & AI agents work. Built automation with Make.com and n8n.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-gray-950 text-gray-200 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text mb-10 text-center">Contact Me</h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Let's Connect</h3>
+          <p class="text-gray-400 mb-4">Open to freelance, internships, and collaborations.</p>
+
+          <ul class="space-y-3 text-sm">
+            <li>📧 <span class="text-purple-400">Email:</span> <a href="mailto:giriadusumalli901@gmail.com" class="hover:underline">giriadusumalli901@gmail.com</a></li>
+            <li>💼 <span class="text-purple-400">LinkedIn:</span> <a href="https://www.linkedin.com/in/girish-adusumalli-3a4210253/" target="_blank" class="hover:underline">linkedin.com</a></li>
+            <li>💻 <span class="text-purple-400">GitHub:</span> <a href="https://github.com/girish503" target="_blank" class="hover:underline">github.com</a></li>
+          </ul>
+          <div class="mt-6">
+            <a href="https://wa.me/916304243126?text=Hi%20Girish%2C%20I%20came%20from%20your%20portfolio!" 
+              target="_blank"
+              class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:opacity-80 text-white px-5 py-2 rounded-lg font-semibold shadow-lg transition-all duration-300">
+              <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" class="w-6 h-6">
+              Message me on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="https://formsubmit.co/giriadusumalli901@gmail.com" method="POST" class="space-y-4 bg-gray-900 p-6 rounded-lg shadow-lg">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <div>
+            <label class="block text-sm mb-1">Your Name</label>
+            <input type="text" name="name" required class="w-full px-4 py-2 rounded bg-gray-950 text-white border border-purple-500 focus:outline-none">
+          </div>
+
+          <div>
+            <label class="block text-sm mb-1">Your Email</label>
+            <input type="email" name="email" required class="w-full px-4 py-2 rounded bg-gray-950 text-white border border-purple-500 focus:outline-none">
+          </div>
+
+          <div>
+            <label class="block text-sm mb-1">Message</label>
+            <textarea name="message" rows="4" required class="w-full px-4 py-2 rounded bg-gray-950 text-white border border-purple-500 focus:outline-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:opacity-80 text-white font-semibold py-2 rounded transition">
+            📩 Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-gray-900 text-white py-6 px-4 mt-20">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-center md:text-left">
+        © 2025 <span class="font-semibold bg-gradient-to-r from-purple-300 to-blue-300 text-transparent bg-clip-text">Girish@AI</span> | Built with 💚 using HTML, Tailwind CSS & JS
+      </p>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+                class="text-sm text-purple-200 hover:underline">
+        ⬆️ Back to Top
+      </button>
+    </div>
+  </footer>
+  
+ 
+  <script src="script.js"></script>
+</body>
+</html>
